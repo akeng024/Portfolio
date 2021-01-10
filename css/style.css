@@ -63,6 +63,8 @@ body {
 
 .content .card {
   width: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content .card .text {
