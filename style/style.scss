@@ -1,0 +1,65 @@
+////
+
+@mixin color($color:#363636){
+  color: $color;
+}
+
+@mixin content_title(){
+  @include color();
+  font-size: 17px;
+}
+
+////
+
+  body{
+    font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  }
+
+  .title{
+    margin-top: 130px;
+    margin-left: 15%;
+    @include color();
+  }
+
+  .menu_title{
+    margin-top: 130px;
+    margin-left: 15%;
+    @include color();
+  }
+  .main{
+    display: flex;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 40px;
+    h3{
+      @include color();
+    }
+
+  }
+
+  .menu{
+    a{
+      text-decoration: none;
+      @include color();
+      display: flex;
+      line-height: 2;
+    }
+  }
+  .content{
+    width: 85%;
+    margin-left: 90px;
+    text-align: center;
+
+    .works{
+      @include content_title();
+    }
+
+    .skill{
+      @include content_title();
+    }
+
+    .profile{
+      @include content_title();
+    }
+
+  }

@@ -9,11 +9,88 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/jquery.inview.min.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7243260-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 </head>
 
 <body>
+  <h2 class="title">aya portfolio</h2>
+  <h3 class="menu_title">menu</h3>
+  <div class="main">
+    <div class="menu">
+      <a href="#1">- Works</a>
+      <a href="#2">- Skill</a>
+      <a href="#3">- Profile</a>
+    </div>
+    <div class="content">
+      <div class="slideshow" id="slideshow">
+        <ol class="slides">
+          <li class="current">
+            <div class="tiltview col">
+              <a href="http://grovemade.com/"><img src="images/1_screen.jpg"/></a>
+              <a href="https://tsovet.com/"><img src="images/2_screen.jpg"/></a>
+            </div>
+          </li>
+          <li>
+            <div class="tiltview row">
+              <a href="http://pexcil.com/"><img src="images/3_mobile.jpg"/></a>
+              <a href="http://foodsense.is/"><img src="images/4_mobile.jpg"/></a>
+            </div>
+          </li>
+          <li>
+            <div class="tiltview col">
+              <a href="http://minimalmonkey.com/"><img src="images/5_screen.jpg"/></a>
+              <a href="http://www.herschelsupply.com/"><img src="images/6_screen.jpg"/></a>
+            </div>
+          </li>
+          <li>
+            <div class="tiltview row">
+              <a href="http://grovemade.com/"><img src="images/1_mobile.jpg"/></a>
+              <a href="https://tsovet.com/"><img src="images/2_mobile.jpg"/></a>
+            </div>
+          </li>
+          <li>
+            <div class="tiltview col">
+              <a href="http://pexcil.com/"><img src="images/3_screen.jpg"/></a>
+              <a href="http://foodsense.is/"><img src="images/4_screen.jpg"/></a>
+            </div>
+          </li>
+          <li>
+            <div class="tiltview row">
+              <a href="http://minimalmonkey.com/"><img src="images/5_mobile.jpg"/></a>
+              <a href="http://www.herschelsupply.com/"><img src="images/6_mobile.jpg"/></a>
+            </div>
+          </li>
+        </ol>
+      </div><!-- /slideshow -->
+      <p class="works">- Works -</p>
+      <p class="skill">- Skill -</p>
+      <p class="profile">- Profile -</p>
+    </div>
+  </div>
+
+<script src="js/classie.js"></script>
+<script src="js/tiltSlider.js"></script>
+<script>
+  new TiltSlider( document.getElementById( 'slideshow' ) );
+</script>
+
 </body>
 
 </html>
