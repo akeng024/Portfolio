@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b7f9eb9-685d-46ac-a72a-3924a109c26f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/3_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/3_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/4_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/4_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/5_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/5_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/6_mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/6_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/classie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/modernizr.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tiltSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/7_screen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/8_screen.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
@@ -56,9 +40,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
@@ -70,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610264272349</updated>
-      <workItem from="1610264273547" duration="5093000" />
+      <workItem from="1610264273547" duration="8748000" />
     </task>
     <servers />
   </component>

@@ -5,12 +5,15 @@
 }
 
 @mixin content_title(){
-  @include color();
+  @include color($color:#aaa);
   font-size: 17px;
 }
 
 ////
 
+  html {
+    scroll-behavior:smooth;
+  }
   body{
     font-family: "游明朝",YuMincho,"Hiragino Mincho ProN W3","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
   }
@@ -51,14 +54,53 @@
     text-align: center;
 
     .works{
+      margin-top: 25px;
+      width: 100%;
+      display: block;
+    }
+
+    .works_title{
       @include content_title();
+    }
+    .cards{
+      margin-top: 25px;
+      width: 98%;
+      display: inline-flex;
+      background-color: #f9f9f9;
+    }
+
+    .card{
+      width: 25%;
+
+      .text{
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .skill{
+      margin-top: 100px;
+      width: 100%;
+      display: block;
+    }
+
+    .skill_title{
       @include content_title();
     }
 
+    .title_description{
+      margin-top: 10px;
+      line-height: 2;
+    }
+
     .profile{
+      margin-top: 100px;
+      width: 100%;
+      display: block;
+      @include content_title();
+    }
+
+    .profile-title{
       @include content_title();
     }
 
