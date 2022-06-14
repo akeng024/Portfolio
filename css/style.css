@@ -32,8 +32,8 @@ a:hover {
     transition: all 0.5s;
 }
 
-/*****HEADER*****/
-header{
+/** header **/
+header {
     display: block;
     width:60%;
     margin-left: 20%;
@@ -60,21 +60,24 @@ header p{
     float: left;
 }
 
-/*****BRANDING*****/
-#branding{
+/** top **/
+#top {
     display: block;
     width: 60%;
     margin-left: 20%;
     overflow: hidden;
-    background-color: #313131;
-    margin-bottom: 20px;
-    letter-spacing: 10px;
+    /* margin-bottom: 20px; */
     line-height: 300px;
+    text-align: center;
 }
-#branding p{
-    color: #fff;
-    font-size: 120%;
-    padding-left: 3%;
+#top h1 {
+    font-size: 300%;
+    /* padding-left: 3%; */
+}
+
+#top p {
+    font-size: 100%;
+    color:#313131
 }
 
 /*****NAV*****/
@@ -183,15 +186,15 @@ article .btn:hover{
     overflow: hidden;
 }
 
-footer{
+footer {
     font-size: 80%;
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #313131;
+    /* background-color: #313131; */
 }
-footer address{
-    color: #fff;
-    letter-spacing: 5px;
+footer p {
+    /* color: #fff; */
+    /* letter-spacing: 5px; */
 }
