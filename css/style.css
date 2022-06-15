@@ -2,10 +2,36 @@
 /* CSS Document */
 
 body {
+    position: relative;
+    cursor: none;
     font-family: 'Josefin Sans', sans-serif;
 /*font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;*/
     margin:0;
     color:#313131;
+}
+
+/** cursor **/
+.cursor,
+.follower {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: none;
+    pointer-events: none;
+}
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: #313131;
+    z-index: 1001;
+}
+.follower {
+    width: 30px;
+    height: 30px;
+    /* background-color: none; */
+    border: 1px solid #313131;
+    z-index: 1000;
 }
 
 /** top **/
