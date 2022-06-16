@@ -1,54 +1,31 @@
 /** cursor **/
-var
-cursor = $(".cursor"),
-follower = $(".follower"),
-cWidth = 8, //カーソルの大きさ
-fWidth = 40, //フォロワーの大きさ
-delay = 10, //数字を大きくするとフォロワーがより遅れて来る
-mouseX = 0, //マウスのX座標
-mouseY = 0, //マウスのY座標
-posX = 0, //フォロワーのX座標
-posY = 0; //フォロワーのX座標
-
-//カーソルの遅延アニメーション
-//ほんの少ーーーしだけ遅延させる 0.001秒
-TweenMax.to({}, .001, {
-  repeat: -1,
-  onRepeat: function() {
-    posX += (mouseX - posX) / delay;
-    posY += (mouseY - posY) / delay;
+$(function(){
+    const stalker = document.getElementById('stalker'); 
+    let hovFlag = false;
     
-    TweenMax.set(follower, {
-        css: {    
-          left: posX - (fWidth / 2),
-          top: posY - (fWidth / 2)
+    document.addEventListener('mousemove', function (e) {
+        if (!hovFlag) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
         }
     });
-    
-    TweenMax.set(cursor, {
-        css: {    
-          left: mouseX - (cWidth / 2),
-          top: mouseY - (cWidth / 2)
-        }
-    });
-  }
-});
 
-//マウス座標を取得
-$(document).on("mousemove", function(e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-});
+    // const linkElem = document.querySelectorAll('a');
+    // for (let i = 0; i < linkElem.length; i++) {
+    //     linkElem[i].addEventListener('mouseover', function (e) {
+    //         hovFlag = true;
+    //         stalker.classList.add('hov_');
+    //         let rect = e.target.getBoundingClientRect();
+    //         let posX = rect.left + (rect.width / 2);
+    //         let posY = rect.top + (rect.height / 2);
 
-$("a").on({
-  "mouseenter": function() {
-    cursor.addClass("is-active");
-    follower.addClass("is-active");
-  },
-  "mouseleave": function() {
-    cursor.removeClass("is-active");
-    follower.removeClass("is-active");
-  }
+    //         stalker.style.transform = 'translate(' + posX + 'px, ' + posY + 'px)';
+    //     });
+
+    //     linkElem[i].addEventListener('mouseout', function (e) {
+    //         hovFlag = false;
+    //         stalker.classList.remove('hov_');
+    //     });
+    // }
 });
 
 /** item title border **/

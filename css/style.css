@@ -11,27 +11,27 @@ body {
 }
 
 /** cursor **/
-.cursor,
-.follower {
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: none;
+#stalker {
     pointer-events: none;
-}
-.cursor {
-    width: 10px;
-    height: 10px;
-    background-color: #313131;
-    z-index: 1001;
-}
-.follower {
+    position: fixed;
+    top: -15px;
+    left: -15px;
     width: 30px;
     height: 30px;
-    /* background-color: none; */
+    background: none;
     border: 1px solid #313131;
-    z-index: 1000;
+    border-radius: 50%;
+    transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
+    transition-timing-function: ease-out;
+    z-index: 1001;
+    /* &.hov_ {
+        top: -32px;
+        left: -32px;
+        width: 64px;
+        height: 64px;
+        transition: .5s;
+        background: rgba(255, 0, 0, 0.4);
+    } */
 }
 
 /** top **/
