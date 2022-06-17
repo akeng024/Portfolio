@@ -1,9 +1,14 @@
 @charset "utf-8";
-/* CSS Document */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     position: relative;
-    cursor: none;
+    /* cursor: none; */
     font-family: 'Josefin Sans', sans-serif;
 /*font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;*/
     margin:0;
@@ -32,6 +37,14 @@ body {
         transition: .5s;
         background: rgba(255, 0, 0, 0.4);
     } */
+}
+
+/** menu **/
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 /** top **/
