@@ -1,37 +1,18 @@
 @charset "utf-8";
-/* CSS Document */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     position: relative;
-    cursor: none;
+    /* cursor: none; */
     font-family: 'Josefin Sans', sans-serif;
 /*font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;*/
     margin:0;
     color:#313131;
-}
-
-/** cursor **/
-#stalker {
-    pointer-events: none;
-    position: fixed;
-    top: -15px;
-    left: -15px;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: 1px solid #313131;
-    border-radius: 50%;
-    transition: transform 0.2s, top, 0.5s, left 0.5s, width .5s, height .5s, background-color .5s;
-    transition-timing-function: ease-out;
-    z-index: 1001;
-    /* &.hov_ {
-        top: -32px;
-        left: -32px;
-        width: 64px;
-        height: 64px;
-        transition: .5s;
-        background: rgba(255, 0, 0, 0.4);
-    } */
 }
 
 /** top **/
